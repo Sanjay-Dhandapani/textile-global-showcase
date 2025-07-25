@@ -19,47 +19,47 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-2xl">
           <div className="mb-6">
-            <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium border border-primary/20">
-              ✨ Premium Textile Exports Since 1995
+            <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium border border-primary/20 animate-fade-in">
+              ✨ Premium Home Textiles Since 1995
             </span>
           </div>
           
-          <h1 className="text-4xl md:text-6xl font-display font-bold text-primary-foreground mb-6 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-display font-bold text-primary-foreground mb-6 leading-tight animate-fade-in">
             Your Global Partner for 
-            <span className="bg-gradient-to-r from-primary-glow to-accent bg-clip-text text-transparent"> Premium Textiles</span>
+            <span className="bg-gradient-to-r from-primary-glow to-accent bg-clip-text text-transparent"> Premium Home Textiles</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed animate-fade-in">
             From premium bed linens to luxury curtains, we export high-quality home textiles to 45+ countries. 
             ISO certified, Oeko-Tex approved, and trusted by global brands.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button variant="hero" size="lg" className="text-base">
+          <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in">
+            <Button variant="hero" size="lg" className="text-base hover-scale transition-all duration-300">
               Explore Our Products
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
             </Button>
-            <Button variant="professional" size="lg" className="text-base">
+            <Button variant="professional" size="lg" className="text-base hover-scale transition-all duration-300">
               Download Catalogue
             </Button>
           </div>
 
           {/* Trust Indicators */}
-          <div className="grid grid-cols-3 gap-6 text-primary-foreground/80">
-            <div className="text-center">
-              <Award className="h-8 w-8 mx-auto mb-2 text-accent" />
-              <div className="text-2xl font-bold">ISO 9001</div>
-              <div className="text-sm">Certified</div>
+          <div className="grid grid-cols-3 gap-4 sm:gap-6 text-primary-foreground/80 animate-fade-in">
+            <div className="text-center transition-transform duration-300 hover:scale-105">
+              <Award className="h-6 w-6 sm:h-8 sm:w-8 mx-auto mb-2 text-accent" />
+              <div className="text-lg sm:text-2xl font-bold">ISO 9001</div>
+              <div className="text-xs sm:text-sm">Certified</div>
             </div>
-            <div className="text-center">
-              <Globe className="h-8 w-8 mx-auto mb-2 text-accent" />
-              <div className="text-2xl font-bold">45+</div>
-              <div className="text-sm">Countries</div>
+            <div className="text-center transition-transform duration-300 hover:scale-105">
+              <Globe className="h-6 w-6 sm:h-8 sm:w-8 mx-auto mb-2 text-accent" />
+              <div className="text-lg sm:text-2xl font-bold">45+</div>
+              <div className="text-xs sm:text-sm">Countries</div>
             </div>
-            <div className="text-center">
-              <Truck className="h-8 w-8 mx-auto mb-2 text-accent" />
-              <div className="text-2xl font-bold">25+</div>
-              <div className="text-sm">Years Export</div>
+            <div className="text-center transition-transform duration-300 hover:scale-105">
+              <Truck className="h-6 w-6 sm:h-8 sm:w-8 mx-auto mb-2 text-accent" />
+              <div className="text-lg sm:text-2xl font-bold">25+</div>
+              <div className="text-xs sm:text-sm">Years Export</div>
             </div>
           </div>
         </div>
@@ -68,9 +68,6 @@ const HeroSection = () => {
       {/* Floating Elements */}
       <div className="absolute top-20 right-10 bg-primary/20 rounded-full p-4 animate-pulse hidden lg:block">
         <Award className="h-6 w-6 text-primary" />
-      </div>
-      <div className="absolute bottom-20 right-20 bg-accent/20 rounded-full p-6 animate-bounce hidden lg:block">
-        <Globe className="h-8 w-8 text-accent" />
       </div>
     </section>
   );

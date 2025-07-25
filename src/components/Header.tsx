@@ -42,15 +42,17 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="bg-gradient-to-r from-primary to-primary-glow p-2 rounded-lg">
-              <div className="text-primary-foreground font-bold text-lg">TGS</div>
-            </div>
-            <div>
+          <div className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/c9524616-6ca4-48fd-bf1b-41102c209e5c.png" 
+              alt="Siva Garments Logo" 
+              className="h-12 w-auto transition-transform duration-300 hover:scale-105"
+            />
+            <div className="hidden sm:block">
               <h1 className="font-display font-bold text-xl text-foreground">
-                Textile Global Showcase
+                Siva Garments
               </h1>
-              <p className="text-xs text-muted-foreground">Premium Export Solutions</p>
+              <p className="text-xs text-muted-foreground">Loomed for Your Home</p>
             </div>
           </div>
 
