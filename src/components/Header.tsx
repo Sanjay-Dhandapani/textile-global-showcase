@@ -8,6 +8,7 @@ const Header = () => {
   const navItems = [
     { label: "Home", href: "#home" },
     { label: "About Us", href: "#about" },
+    { label: "Services", href: "#services" },
     { label: "Products", href: "#products" },
     { label: "Quality", href: "#quality" },
     { label: "Blog", href: "#blog" },
@@ -23,7 +24,7 @@ const Header = () => {
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-1">
                 <Mail className="h-3 w-3" />
-                <span>exports@textileglobal.com</span>
+                <span>exports@sivagarments.com</span>
               </div>
               <div className="flex items-center space-x-1">
                 <Phone className="h-3 w-3" />
@@ -44,7 +45,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/c9524616-6ca4-48fd-bf1b-41102c209e5c.png" 
+              src="src/assets/siva-garments-logo-refined.png" 
               alt="Siva Garments Logo" 
               className="h-12 w-auto transition-transform duration-300 hover:scale-105"
             />

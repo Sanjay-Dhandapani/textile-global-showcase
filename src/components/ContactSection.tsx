@@ -3,29 +3,34 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, MessageCircle, Languages } from "lucide-react";
 
 const ContactSection = () => {
   const contactInfo = [
     {
       icon: MapPin,
       title: "Factory Address",
-      details: "Industrial Area, Sector 25\nTextile Hub, Gujarat 382025, India",
+      details: "Industrial Area, Sector 25\nTextile Hub, Tamil Nadu 641001, India",
     },
     {
       icon: Phone,
       title: "Phone Numbers",
-      details: "+91 98765 43210\n+91 79 2578 9456",
+      details: "+91 98765 43210\n+91 87654 32109",
     },
     {
       icon: Mail,
       title: "Email Addresses",
-      details: "exports@textileglobal.com\ninfo@textileglobal.com",
+      details: "exports@sivagarments.com\ninfo@sivagarments.com",
     },
     {
       icon: Clock,
       title: "Business Hours",
-      details: "Mon - Fri: 9:00 AM - 6:00 PM\nSat: 9:00 AM - 1:00 PM (IST)",
+      details: "Mon - Sat: 9:00 AM - 6:00 PM\nSunday: Closed (IST)",
+    },
+    {
+      icon: Languages,
+      title: "Languages Supported",
+      details: "English • Hindi • Telugu\nMalayalam • Urdu",
     },
   ];
 

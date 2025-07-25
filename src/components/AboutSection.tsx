@@ -7,27 +7,27 @@ const AboutSection = () => {
   const achievements = [
     {
       icon: Factory,
-      title: "50,000+ sq ft",
-      subtitle: "Manufacturing Facility",
-      description: "State-of-the-art production units with latest machinery",
+      title: "₹4 Crores",
+      subtitle: "Annual Turnover",
+      description: "Consistent growth with strong financial performance",
     },
     {
       icon: Users,
-      title: "500+ Skilled",
-      subtitle: "Workers & Artisans",
-      description: "Experienced craftspeople ensuring quality at every step",
+      title: "208 Staff",
+      subtitle: "8 Full-time + 200 Contract",
+      description: "Skilled workforce ensuring quality production",
     },
     {
       icon: Award,
-      title: "ISO 9001 & Oeko-Tex",
-      subtitle: "Certified Quality",
-      description: "International standards for quality and safety",
+      title: "40 Machines",
+      subtitle: "Modern Equipment",
+      description: "Latest technology for precision manufacturing",
     },
     {
       icon: TrendingUp,
-      title: "$25M+",
-      subtitle: "Annual Exports",
-      description: "Growing business with satisfied global customers",
+      title: "22 Companies",
+      subtitle: "Trusted Supplier",
+      description: "Long-term partnerships with major brands",
     },
   ];
 
@@ -44,24 +44,24 @@ const AboutSection = () => {
             </div>
             
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-              Leading Textile Exports with 
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> 25+ Years Experience</span>
+              Leading Home Textile Manufacturing with 
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> 25+ Years Excellence</span>
             </h2>
             
             <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
               <p>
-                Founded in 1995, Textile Global Showcase has grown from a small family business 
-                to one of India's premier textile export companies. We specialize in premium home 
-                textiles that meet international quality standards.
+                Founded in 1995, Siva Garments has grown from a small family business 
+                to a trusted name in premium home textile manufacturing. We specialize in 
+                high-quality garments and home textiles with precision craftsmanship.
               </p>
               <p>
-                Our journey began with a simple vision: to bring the finest Indian craftsmanship 
-                to global markets. Today, we export to 45+ countries and work with leading brands 
-                worldwide, maintaining the same commitment to quality and customer satisfaction.
+                Our comprehensive services include Picoting, Marrowing, Computer Embroidery, 
+                Pintech, Partack, and Kaja Button work, followed by our complete manufacturing 
+                process of Cutting, Stitching, Trimming, Checking, Ironing, and Packing.
               </p>
               <p>
-                With ISO 9001 certification and Oeko-Tex approval, we ensure that every product 
-                meets the highest standards of quality, safety, and environmental responsibility.
+                With 40 modern machines, ₹4 crores annual turnover, and partnerships with 22 
+                companies, we maintain the highest standards while serving clients across multiple regions.
               </p>
             </div>
 
