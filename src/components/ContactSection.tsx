@@ -45,12 +45,12 @@ const ContactSection = () => {
             </span>
           </div>
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-            Ready to Start Your 
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> Export Journey?</span>
+            Partner with Us for 
+            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> OEM Excellence</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Connect with our export team for quotes, samples, or any inquiries. 
-            We're here to support your textile sourcing needs.
+            Whether you're an exporter, retailer, hotel chain, or B2B buyer, connect with our team 
+            for customized OEM solutions and competitive quotes.
           </p>
         </div>
 
@@ -60,7 +60,7 @@ const ContactSection = () => {
             <Card className="border-2 border-primary/20 shadow-[var(--shadow-card)]">
               <CardContent className="p-8">
                 <h3 className="text-xl font-display font-semibold text-foreground mb-6">
-                  Send Us Your Inquiry
+                  Get Your OEM Quote
                 </h3>
                 <form className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
@@ -115,18 +115,21 @@ const ContactSection = () => {
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-foreground mb-2">
-                        Product Interest
+                        Business Type
                       </label>
                       <Select>
                         <SelectTrigger>
-                          <SelectValue placeholder="Select product category" />
+                          <SelectValue placeholder="Select your business type" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="bed-linens">Bed Linens</SelectItem>
-                          <SelectItem value="bath-textiles">Bath Textiles</SelectItem>
-                          <SelectItem value="curtains">Curtains & Drapes</SelectItem>
-                          <SelectItem value="table-linens">Table Linens</SelectItem>
-                          <SelectItem value="custom">Custom Products</SelectItem>
+                          <SelectItem value="exporter">Exporter/Buying House</SelectItem>
+                          <SelectItem value="hotel">Hotel Chain</SelectItem>
+                          <SelectItem value="hospital">Hospital/Healthcare</SelectItem>
+                          <SelectItem value="retailer">Online Retailer</SelectItem>
+                          <SelectItem value="wholesaler">Wholesaler/Distributor</SelectItem>
+                          <SelectItem value="corporate">Corporate/Gifting</SelectItem>
+                          <SelectItem value="manufacturer">Manufacturer</SelectItem>
+                          <SelectItem value="other">Other B2B</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
@@ -137,18 +140,18 @@ const ContactSection = () => {
                       Message *
                     </label>
                     <Textarea 
-                      placeholder="Tell us about your requirements, quantities, target markets, and any specific questions..."
+                      placeholder="Tell us about your OEM requirements: product types, quantities, customization needs, target markets, timelines, and any specific questions..."
                       rows={5}
                     />
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button variant="hero" size="lg" className="flex-1">
-                      Send Inquiry
+                      Send OEM Inquiry
                     </Button>
                     <Button variant="export" size="lg" className="flex-1">
                       <MessageCircle className="mr-2 h-4 w-4" />
-                      WhatsApp Us
+                      WhatsApp B2B
                     </Button>
                   </div>
                 </form>

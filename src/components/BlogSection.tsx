@@ -10,28 +10,28 @@ function BlogSection() {
   // Blog posts data
   const blogPosts = [
     {
-      title: '2024 Global Textile Export Trends: What Buyers Need to Know',
-      excerpt: 'Explore the latest trends in international textile trade, including sustainability requirements and emerging market demands.',
+      title: 'OEM Manufacturing for Hotel Chains: Best Practices',
+      excerpt: 'Learn how we serve major hotel chains with custom linens, consistent quality, and reliable delivery schedules.',
       image: exportImage,
       date: 'March 15, 2024',
-      author: 'Export Team',
-      category: 'Industry Insights',
+      author: 'OEM Team',
+      category: 'OEM Solutions',
     },
     {
-      title: 'Understanding Oeko-Tex Standards for Home Textiles',
-      excerpt: 'A comprehensive guide to textile certifications and why they matter for international buyers and consumers.',
+      title: 'White Label vs Private Label: Choosing Your Strategy',
+      excerpt: 'Understanding the differences and benefits of white label manufacturing for retailers and distributors.',
       image: productsImage,
       date: 'March 10, 2024',
-      author: 'Quality Team',
-      category: 'Standards',
+      author: 'Business Team',
+      category: 'Business Strategy',
     },
     {
-      title: 'Sustainable Manufacturing: Our Green Initiatives',
-      excerpt: "How we're reducing environmental impact while maintaining quality in our textile production processes.",
+      title: 'Serving Domestic B2B Markets: Success Stories',
+      excerpt: "How we've helped Indian businesses scale with our OEM solutions across various market segments.",
       image: bedroomImage,
       date: 'March 5, 2024',
-      author: 'Sustainability Team',
-      category: 'Sustainability',
+      author: 'Domestic Sales',
+      category: 'Case Studies',
     },
   ];
 
@@ -46,12 +46,12 @@ function BlogSection() {
             </span>
           </div>
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-            Latest News &
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> Industry Updates</span>
+            OEM Insights &
+            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> Business Updates</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Stay informed with our expert insights on textile industry trends,
-            quality standards, and global trade developments.
+            Discover how we help businesses succeed with our OEM solutions, 
+            industry insights, and success stories from various market segments.
           </p>
         </div>
 

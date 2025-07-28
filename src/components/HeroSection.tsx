@@ -20,27 +20,27 @@ const HeroSection = () => {
         <div className="max-w-2xl">
           <div className="mb-6">
             <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium border border-primary/20 animate-fade-in">
-              ✨ Premium Home Textiles Since 1995
+              ✨ OEM Manufacturing Excellence Since 1995
             </span>
           </div>
           
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-display font-bold text-primary-foreground mb-6 leading-tight animate-fade-in">
-            Your Global Partner for 
-            <span className="bg-gradient-to-r from-primary-glow to-accent bg-clip-text text-transparent"> Premium Home Textiles</span>
+            Leading OEM Manufacturer for
+            <span className="bg-gradient-to-r from-primary-glow to-accent bg-clip-text text-transparent"> Global & Domestic Markets</span>
           </h1>
           
           <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed animate-fade-in">
-            From premium bed linens to luxury curtains, we export high-quality home textiles to 45+ countries. 
-            ISO certified, Oeko-Tex approved, and trusted by global brands.
+            Serving exporters, buying houses, hotel chains, hospitals, online retailers, wholesalers, 
+            and corporate clients worldwide and across India. Your trusted OEM partner for premium home textiles.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in">
             <Button variant="hero" size="lg" className="text-base hover-scale transition-all duration-300">
-              Explore Our Products
+              Explore OEM Solutions
               <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
             </Button>
             <Button variant="professional" size="lg" className="text-base hover-scale transition-all duration-300">
-              Download Catalogue
+              Get B2B Quote
             </Button>
           </div>
 

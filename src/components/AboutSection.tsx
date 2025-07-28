@@ -44,33 +44,34 @@ const AboutSection = () => {
             </div>
             
             <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-              Leading Home Textile Manufacturing with 
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> 25+ Years Excellence</span>
+              Your Trusted OEM Partner for 
+              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> Global & Domestic Success</span>
             </h2>
             
             <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
               <p>
-                Founded in 1995, Siva Garments has grown from a small family business 
-                to a trusted name in premium home textile manufacturing. We specialize in 
-                high-quality garments and home textiles with precision craftsmanship.
+                Founded in 1995, Siva Garments has evolved into a comprehensive OEM manufacturer 
+                serving both international exporters and India's leading businesses. We empower 
+                brands across hotel chains, hospitals, online retailers, and corporate sectors.
               </p>
               <p>
-                Our comprehensive services include Picoting, Marrowing, Computer Embroidery, 
-                Pintech, Partack, and Kaja Button work, followed by our complete manufacturing 
-                process of Cutting, Stitching, Trimming, Checking, Ironing, and Packing.
+                As your white-label manufacturing partner, we offer end-to-end solutions from 
+                Picoting, Marrowing, Computer Embroidery, Pintech, Partack, and Kaja Button work 
+                to complete manufacturing: Cutting, Stitching, Trimming, Checking, Ironing, and Packing.
               </p>
               <p>
-                With 40 modern machines, ₹4 crores annual turnover, and partnerships with 22 
-                companies, we maintain the highest standards while serving clients across multiple regions.
+                With ₹4 crores annual turnover, 208 skilled staff, 40 modern machines, and trusted 
+                partnerships with 22 companies, we deliver quality solutions to exporters, buying 
+                houses, hotels, hospitals, retailers, and corporate clients worldwide and across India.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="hero" size="lg">
-                Our Factory Tour
+                OEM Partnership
               </Button>
               <Button variant="professional" size="lg">
-                Certifications
+                View Certifications
               </Button>
             </div>
           </div>
@@ -84,8 +85,8 @@ const AboutSection = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-secondary/60 to-transparent rounded-2xl"></div>
             <div className="absolute bottom-6 left-6 bg-background/90 backdrop-blur-sm rounded-lg p-4 border border-border">
-              <h4 className="font-display font-semibold text-foreground mb-1">Global Reach</h4>
-              <p className="text-sm text-muted-foreground">Exporting to 45+ countries worldwide</p>
+              <h4 className="font-display font-semibold text-foreground mb-1">OEM Excellence</h4>
+              <p className="text-sm text-muted-foreground">Serving global & domestic B2B markets</p>
             </div>
           </div>
         </div>

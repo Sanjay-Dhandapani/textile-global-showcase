@@ -87,11 +87,12 @@ const ServicesSection = () => {
             🛠️ Our Services & Capabilities
           </span>
           <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
-            Comprehensive Textile 
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> Manufacturing Solutions</span>
+            Complete OEM Manufacturing 
+            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> & White Label Solutions</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            From specialized techniques to complete manufacturing processes, we offer end-to-end solutions for all your textile needs.
+            End-to-end textile manufacturing services for exporters, retailers, hotels, hospitals, and B2B clients. 
+            From specialized techniques to private label production.
           </p>
         </div>
 

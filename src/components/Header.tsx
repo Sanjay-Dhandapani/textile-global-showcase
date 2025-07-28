@@ -8,6 +8,7 @@ const Header = () => {
   const navItems = [
     { label: "Home", href: "#home" },
     { label: "About Us", href: "#about" },
+    { label: "Markets", href: "#markets" },
     { label: "Services", href: "#services" },
     { label: "Products", href: "#products" },
     { label: "Quality", href: "#quality" },
@@ -33,7 +34,7 @@ const Header = () => {
             </div>
             <div className="flex items-center space-x-1">
               <Globe className="h-3 w-3" />
-              <span>Serving xx+ Countries</span>
+              <span>OEM for Global & Domestic Markets</span>
             </div>
           </div>
         </div>
@@ -72,18 +73,18 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button
-              variant="hero"
-              size="lg"
-              onClick={() => {
-                const el = document.getElementById("contact");
-                if (el) {
-                  el.scrollIntoView({ behavior: "smooth" });
-                }
-              }}
-            >
-              Get Quote
-            </Button>
+              <Button
+                variant="hero"
+                size="lg"
+                onClick={() => {
+                  const el = document.getElementById("contact");
+                  if (el) {
+                    el.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
+                Get OEM Quote
+              </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -119,7 +120,7 @@ const Header = () => {
                   }
                 }}
               >
-                Get Quote
+                Get OEM Quote
               </Button>
             </nav>
           </div>
