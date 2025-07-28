@@ -68,71 +68,72 @@ const MarketsSection = () => {
   ];
 
   return (
-    <section id="markets" className="py-20 bg-secondary/30">
+    <section id="markets" className="py-24 bg-gradient-subtle">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium border border-primary/20 mb-6 animate-fade-in">
+        <div className="text-center mb-20">
+          <span className="inline-flex items-center bg-primary/10 text-primary px-6 py-3 rounded-full text-sm font-medium border border-primary/20 mb-8 animate-fade-in backdrop-blur-sm">
             🌍 Our Markets
           </span>
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6 animate-fade-in">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground mb-8 animate-fade-up">
             Comprehensive OEM Solutions for 
+            <br />
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> Every Business</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto animate-fade-in">
+          <p className="text-xl text-muted-foreground max-w-4xl mx-auto animate-slide-left leading-relaxed">
             From global exporters to local businesses, we provide tailored textile manufacturing 
             solutions that meet the unique needs of diverse market segments.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {markets.map((market, index) => {
             const Icon = market.icon;
             return (
               <Card 
                 key={index} 
-                className="p-6 hover:shadow-[var(--shadow-card)] transition-all duration-300 border-2 hover:border-primary/30 group animate-fade-in"
+                className="group p-8 hover:shadow-[var(--shadow-float)] transition-all duration-500 border-2 hover:border-primary/30 bg-card/80 backdrop-blur-sm hover:bg-card animate-fade-up hover:-translate-y-2"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardContent className="p-0">
-                  <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-full p-3 w-12 h-12 mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Icon className="h-6 w-6 text-primary" />
+                  <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl p-4 w-16 h-16 mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-lg">
+                    <Icon className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="text-lg font-display font-bold text-foreground mb-3">
+                  <h3 className="text-xl font-display font-bold text-foreground mb-4 group-hover:text-primary transition-colors duration-300">
                     {market.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                  <p className="text-muted-foreground mb-6 leading-relaxed line-clamp-3">
                     {market.description}
                   </p>
-                  <ul className="space-y-1">
+                  <div className="space-y-2">
                     {market.features.map((feature, idx) => (
-                      <li key={idx} className="text-xs text-primary flex items-center">
-                        <div className="w-1 h-1 bg-primary rounded-full mr-2"></div>
-                        {feature}
-                      </li>
+                      <div key={idx} className="flex items-center text-primary font-medium">
+                        <div className="w-2 h-2 bg-gradient-to-r from-primary to-accent rounded-full mr-3 flex-shrink-0"></div>
+                        <span className="text-sm">{feature}</span>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 </CardContent>
               </Card>
             );
           })}
         </div>
 
-        <div className="text-center">
-          <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-8 border border-primary/10">
-            <h3 className="text-2xl font-display font-bold text-foreground mb-4">
+        <div className="text-center animate-scale-in">
+          <div className="bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 rounded-3xl p-12 border-2 border-primary/10 backdrop-blur-sm shadow-[var(--shadow-elegant)]">
+            <h3 className="text-3xl font-display font-bold text-foreground mb-6">
               Ready to Partner with Us?
             </h3>
-            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+            <p className="text-muted-foreground mb-8 max-w-3xl mx-auto text-lg leading-relaxed">
               Whether you're an exporter, retailer, or institutional buyer, we have the expertise 
-              and capacity to meet your textile manufacturing needs.
+              and capacity to meet your textile manufacturing needs with precision and reliability.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="lg">
-                <Users className="mr-2 h-5 w-5" />
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <Button variant="hero" size="lg" className="px-8 py-4 text-lg shadow-[var(--shadow-float)] hover:shadow-[var(--shadow-glow)] transition-all duration-300">
+                <Users className="mr-3 h-6 w-6" />
                 Become a Partner
               </Button>
-              <Button variant="professional" size="lg">
-                <Package className="mr-2 h-5 w-5" />
+              <Button variant="professional" size="lg" className="px-8 py-4 text-lg backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300">
+                <Package className="mr-3 h-6 w-6" />
                 Request Samples
               </Button>
             </div>

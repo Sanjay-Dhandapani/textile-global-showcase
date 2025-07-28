@@ -17,10 +17,10 @@ const Header = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-sm">
+    <header className="sticky top-0 z-50 bg-background/98 backdrop-blur-md border-b border-border/50 shadow-sm">
       {/* Top Bar */}
-      <div className="border-b border-border/50 bg-secondary/30">
-        <div className="container mx-auto px-4 py-2">
+      <div className="border-b border-border/30 bg-gradient-to-r from-secondary/20 to-accent/10">
+        <div className="container mx-auto px-4 py-1.5">
           <div className="flex justify-between items-center text-sm text-muted-foreground">
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-1">
@@ -41,14 +41,14 @@ const Header = () => {
       </div>
 
       {/* Main Navigation */}
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
               src="src/assets/siva-garments-logo-refined.png" 
               alt="Siva Garments Logo" 
-              className="h-12 w-auto transition-transform duration-300 hover:scale-105"
+              className="h-10 w-auto transition-transform duration-300 hover:scale-105"
             />
             <div className="hidden sm:block">
               <h1 className="font-display font-bold text-xl text-foreground">
@@ -73,18 +73,19 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-              <Button
-                variant="hero"
-                size="lg"
-                onClick={() => {
-                  const el = document.getElementById("contact");
-                  if (el) {
-                    el.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-              >
-                Get OEM Quote
-              </Button>
+            <Button
+              variant="hero"
+              size="sm"
+              className="px-4 py-2 text-sm font-medium"
+              onClick={() => {
+                const el = document.getElementById("contact");
+                if (el) {
+                  el.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
+              Get Quote
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -98,13 +99,13 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 py-4 border-t border-border">
-            <nav className="flex flex-col space-y-3">
+          <div className="md:hidden mt-3 py-3 border-t border-border/50 bg-background/95 backdrop-blur-sm">
+            <nav className="flex flex-col space-y-2">
               {navItems.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
-                  className="text-foreground hover:text-primary transition-colors duration-200 font-medium py-2"
+                  className="text-foreground hover:text-primary transition-colors duration-200 font-medium py-1.5 px-2 rounded-md hover:bg-primary/5"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
@@ -112,15 +113,17 @@ const Header = () => {
               ))}
               <Button
                 variant="hero"
-                className="mt-4 w-full"
+                size="sm"
+                className="mt-3 w-full"
                 onClick={() => {
                   const el = document.getElementById("contact");
                   if (el) {
                     el.scrollIntoView({ behavior: "smooth" });
                   }
+                  setIsMenuOpen(false);
                 }}
               >
-                Get OEM Quote
+                Get Quote
               </Button>
             </nav>
           </div>
