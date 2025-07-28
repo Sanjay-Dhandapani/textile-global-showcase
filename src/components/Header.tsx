@@ -33,7 +33,7 @@ const Header = () => {
             </div>
             <div className="flex items-center space-x-1">
               <Globe className="h-3 w-3" />
-              <span>Serving 45+ Countries</span>
+              <span>Serving xx+ Countries</span>
             </div>
           </div>
         </div>
@@ -72,7 +72,16 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button variant="hero" size="lg">
+            <Button
+              variant="hero"
+              size="lg"
+              onClick={() => {
+                const el = document.getElementById("contact");
+                if (el) {
+                  el.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
               Get Quote
             </Button>
           </div>
@@ -100,7 +109,16 @@ const Header = () => {
                   {item.label}
                 </a>
               ))}
-              <Button variant="hero" className="mt-4 w-full">
+              <Button
+                variant="hero"
+                className="mt-4 w-full"
+                onClick={() => {
+                  const el = document.getElementById("contact");
+                  if (el) {
+                    el.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+              >
                 Get Quote
               </Button>
             </nav>

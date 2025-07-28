@@ -184,13 +184,16 @@ const ContactSection = () => {
             {/* Map Placeholder */}
             <Card className="border-2 border-primary/20">
               <CardContent className="p-0">
-                <div className="h-48 bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="h-8 w-8 text-primary mx-auto mb-2" />
-                    <p className="text-sm font-medium text-foreground">Factory Location</p>
-                    <p className="text-xs text-muted-foreground">Interactive map</p>
-                  </div>
-                </div>
+                <iframe
+                  title="Siva Garments Factory Location"
+                  src="https://www.google.com/maps?q=Siva+Garments,+Industrial+Area,+India&output=embed"
+                  width="100%"
+                  height="192"
+                  style={{ border: 0, borderRadius: '0.75rem' }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </CardContent>
             </Card>
           </div>
