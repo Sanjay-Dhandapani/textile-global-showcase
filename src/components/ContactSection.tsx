@@ -49,8 +49,7 @@ const ContactSection = () => {
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> OEM Excellence</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Whether you're an exporter, retailer, hotel chain, or B2B buyer, connect with our team 
-            for customized OEM solutions and competitive quotes.
+            Whether you're an exporter, retailer, hotel chain, or B2B buyer, reach out for customized OEM solutions and competitive quotes.
           </p>
         </div>
 
@@ -58,7 +57,7 @@ const ContactSection = () => {
           {/* Contact Form */}
           <div className="lg:col-span-2">
             <Card className="border-2 border-primary/20 shadow-[var(--shadow-card)]">
-              <CardContent className="p-8">
+              <CardContent className="p-6 sm:p-8">
                 <h3 className="text-xl font-display font-semibold text-foreground mb-6">
                   Get Your OEM Quote
                 </h3>
@@ -185,14 +184,14 @@ const ContactSection = () => {
             })}
 
             {/* Map Placeholder */}
-            <Card className="border-2 border-primary/20">
+            <Card className="border-2 border-primary/20 overflow-hidden">
               <CardContent className="p-0">
                 <iframe
                   title="Siva Garments Factory Location"
                   src="https://www.google.com/maps?q=Siva+Garments,+Industrial+Area,+India&output=embed"
                   width="100%"
                   height="192"
-                  style={{ border: 0, borderRadius: '0.75rem' }}
+                  style={{ border: 0 }}
                   allowFullScreen={true}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"

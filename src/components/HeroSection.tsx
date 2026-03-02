@@ -4,16 +4,19 @@ import heroImage from "@/assets/hero-textile-factory.jpg";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-background via-muted/30 to-background">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-background via-muted/30 to-background"
+    >
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
           alt="Modern textile manufacturing facility"
-          className="w-full h-full object-cover opacity-30"
+          className="w-full h-full object-cover opacity-30 dark:opacity-20"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/70 to-transparent"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-secondary/70 to-transparent dark:from-foreground/75 dark:via-foreground/35 dark:to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent dark:from-foreground/15 dark:to-transparent"></div>
       </div>
 
       {/* Content */}
@@ -32,22 +35,30 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-lg sm:text-xl md:text-2xl text-primary-foreground/90 mb-10 leading-relaxed max-w-3xl animate-slide-left">
-            Serving exporters, buying houses, hotel chains, hospitals, online retailers, wholesalers, 
-            and corporate clients worldwide and across India. Your trusted OEM partner for premium home textiles.
+            Serving exporters, buying houses, hotel chains, hospitals, online retailers, wholesalers, and corporate clients worldwide and across India.
+            Your trusted OEM partner for premium home textiles.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 mb-16 animate-scale-in">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4 shadow-[var(--shadow-float)] hover:shadow-[var(--shadow-glow)] transition-all duration-300">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-12 sm:mb-16 animate-scale-in">
+            <Button
+              variant="hero"
+              size="lg"
+              className="text-lg px-8 py-4 shadow-[var(--shadow-float)] hover:shadow-[var(--shadow-glow)] transition-all duration-300"
+            >
               Explore OEM Solutions
               <ArrowRight className="ml-3 h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
             </Button>
-            <Button variant="professional" size="lg" className="text-lg px-8 py-4 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300">
+            <Button
+              variant="professional"
+              size="lg"
+              className="text-lg px-8 py-4 backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300"
+            >
               Get B2B Quote
             </Button>
           </div>
 
           {/* Trust Indicators */}
-          <div className="grid grid-cols-3 gap-6 sm:gap-8 text-primary-foreground/80 animate-fade-up">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 text-primary-foreground/80 animate-fade-up">
             <div className="text-center p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-white/10 hover:scale-105">
               <Award className="h-8 w-8 sm:h-10 sm:w-10 mx-auto mb-3 text-accent animate-float" />
               <div className="text-xl sm:text-3xl font-bold">ISO 9001</div>
@@ -67,17 +78,8 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Floating Elements */}
-      <div className="absolute top-20 right-10 hidden lg:block animate-float">
-        <div className="bg-primary/20 backdrop-blur-sm rounded-full p-4 border border-primary/30">
-          <Award className="h-6 w-6 text-primary" />
-        </div>
-      </div>
-      <div className="absolute bottom-20 left-10 hidden lg:block animate-float" style={{ animationDelay: '1.5s' }}>
-        <div className="bg-accent/20 backdrop-blur-sm rounded-full p-4 border border-accent/30">
-          <Globe className="h-6 w-6 text-accent" />
-        </div>
-      </div>
+      {/* Decorative floating elements removed (per request) */}
+    
     </section>
   );
 };

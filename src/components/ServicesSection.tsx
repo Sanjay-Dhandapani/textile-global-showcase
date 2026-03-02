@@ -91,8 +91,7 @@ const ServicesSection = () => {
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> & White Label Solutions</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            End-to-end textile manufacturing services for exporters, retailers, hotels, hospitals, and B2B clients. 
-            From specialized techniques to private label production.
+            End-to-end textile manufacturing for exporters, retailers, hotels, hospitals, and other B2B clients - from specialized techniques to private-label production.
           </p>
         </div>
 
@@ -101,7 +100,7 @@ const ServicesSection = () => {
           <h3 className="text-2xl font-display font-bold text-foreground mb-8 text-center">
             Specialized Services
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {specializedServices.map((service, index) => {
               const Icon = service.icon;
               return (
@@ -128,7 +127,7 @@ const ServicesSection = () => {
           <h3 className="text-2xl font-display font-bold text-foreground mb-8 text-center">
             Manufacturing Process
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {manufacturingProcess.map((process, index) => {
               const Icon = process.icon;
               return (

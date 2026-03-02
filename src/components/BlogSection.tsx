@@ -50,13 +50,12 @@ function BlogSection() {
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> Business Updates</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover how we help businesses succeed with our OEM solutions, 
-            industry insights, and success stories from various market segments.
+            See how we support brands with OEM solutions, practical insights, and real examples from different market segments.
           </p>
         </div>
 
         {/* Blog Grid */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12">
           {blogPosts.map(function(post, idx) {
             return (
               <Card key={idx} className="group hover:shadow-[var(--shadow-elegant)] transition-all duration-300 border-2 hover:border-primary/30 overflow-hidden">
@@ -100,13 +99,12 @@ function BlogSection() {
         </div>
 
         {/* Newsletter Subscription */}
-        <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-8 text-center border border-primary/20">
+        <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-6 sm:p-8 text-center border border-primary/20">
           <h3 className="text-2xl font-display font-bold text-foreground mb-4">
             Stay Updated with Industry News
           </h3>
           <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-            Subscribe to our newsletter for the latest textile industry insights,
-            export trends, and company updates delivered directly to your inbox.
+            Subscribe for textile industry insights, export trends, and company updates delivered to your inbox.
           </p>
           <div className="flex flex-col sm:flex-row max-w-md mx-auto gap-3">
             <input

@@ -50,19 +50,16 @@ const AboutSection = () => {
             
             <div className="space-y-4 text-muted-foreground leading-relaxed mb-8">
               <p>
-                Founded in 1995, Siva Garments has evolved into a comprehensive OEM manufacturer 
-                serving both international exporters and India's leading businesses. We empower 
-                brands across hotel chains, hospitals, online retailers, and corporate sectors.
+                Started in 1995, Siva Garments has grown into a full-service OEM manufacturer serving international exporters as well as leading businesses across India.
+                We support brands across hotel chains, hospitals, online retailers, and corporate sectors.
               </p>
               <p>
-                As your white-label manufacturing partner, we offer end-to-end solutions from 
-                Picoting, Marrowing, Computer Embroidery, Pintech, Partack, and Kaja Button work 
+                As your white-label manufacturing partner, we handle everything from Picoting, Marrowing, Computer Embroidery, Pintech, Partack, and Kaja Button work
                 to complete manufacturing: Cutting, Stitching, Trimming, Checking, Ironing, and Packing.
               </p>
               <p>
-                With ₹4 crores annual turnover, 208 skilled staff, 40 modern machines, and trusted 
-                partnerships with 22 companies, we deliver quality solutions to exporters, buying 
-                houses, hotels, hospitals, retailers, and corporate clients worldwide and across India.
+                With ₹4 crores annual turnover, 208 skilled staff, 40 modern machines, and trusted partnerships with 22 companies, we deliver reliable quality to exporters, buying houses,
+                hotels, hospitals, retailers, and corporate clients worldwide and across India.
               </p>
             </div>
 
@@ -96,7 +93,10 @@ const AboutSection = () => {
           {achievements.map((achievement, index) => {
             const Icon = achievement.icon;
             return (
-              <Card key={index} className="text-center p-6 hover:shadow-[var(--shadow-card)] transition-all duration-300 border-2 hover:border-primary/30 group">
+              <Card
+                key={index}
+                className="text-center p-6 hover:shadow-[var(--shadow-card)] transition-all duration-300 border-2 hover:border-primary/30 group"
+              >
                 <CardContent className="p-0">
                   <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-full p-4 w-16 h-16 mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                     <Icon className="h-8 w-8 text-primary mx-auto" />

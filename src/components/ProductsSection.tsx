@@ -42,13 +42,12 @@ const ProductsSection = () => {
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> Collections</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover our comprehensive range of premium home textiles, crafted with precision 
-            and designed for global markets.
+            Explore our full range of premium home textiles, crafted with care and built for global markets.
           </p>
         </div>
 
         {/* Featured Products Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {productCategories.map((category, index) => (
             <Card key={index} className="group hover:shadow-[var(--shadow-elegant)] transition-all duration-300 border-2 hover:border-primary/30">
               <div className="relative overflow-hidden rounded-t-lg">
@@ -89,13 +88,12 @@ const ProductsSection = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-8 border border-primary/20">
+        <div className="text-center bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-6 sm:p-8 border border-primary/20">
           <h3 className="text-2xl font-display font-bold text-foreground mb-4">
             Need Custom Products?
           </h3>
           <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-            We offer bespoke manufacturing services with your specifications. 
-            From design to delivery, we ensure quality at every step.
+            We offer bespoke manufacturing based on your specs. From design to delivery, we keep quality consistent at every step.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="lg">

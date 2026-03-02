@@ -68,7 +68,7 @@ const MarketsSection = () => {
   ];
 
   return (
-    <section id="markets" className="py-24 bg-gradient-subtle">
+    <section id="markets" className="py-20 sm:py-24 bg-gradient-subtle">
       <div className="container mx-auto px-4">
         <div className="text-center mb-20">
           <span className="inline-flex items-center bg-primary/10 text-primary px-6 py-3 rounded-full text-sm font-medium border border-primary/20 mb-8 animate-fade-in backdrop-blur-sm">
@@ -80,18 +80,17 @@ const MarketsSection = () => {
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> Every Business</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto animate-slide-left leading-relaxed">
-            From global exporters to local businesses, we provide tailored textile manufacturing 
-            solutions that meet the unique needs of diverse market segments.
+            From global exporters to local businesses, we provide tailored textile manufacturing solutions that match the needs of each market segment.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-12 sm:mb-16">
           {markets.map((market, index) => {
             const Icon = market.icon;
             return (
               <Card 
                 key={index} 
-                className="group p-8 hover:shadow-[var(--shadow-float)] transition-all duration-500 border-2 hover:border-primary/30 bg-card/80 backdrop-blur-sm hover:bg-card animate-fade-up hover:-translate-y-2"
+                className="group p-6 sm:p-8 hover:shadow-[var(--shadow-float)] transition-all duration-500 border-2 hover:border-primary/30 bg-card/80 backdrop-blur-sm hover:bg-card animate-fade-up hover:-translate-y-2"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <CardContent className="p-0">
@@ -101,7 +100,7 @@ const MarketsSection = () => {
                   <h3 className="text-xl font-display font-bold text-foreground mb-4 group-hover:text-primary transition-colors duration-300">
                     {market.title}
                   </h3>
-                  <p className="text-muted-foreground mb-6 leading-relaxed line-clamp-3">
+                  <p className="text-muted-foreground mb-6 leading-relaxed">
                     {market.description}
                   </p>
                   <div className="space-y-2">

@@ -97,6 +97,31 @@ All colors MUST be HSL.
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
+
+  /* Dark mode custom design tokens */
+  --primary: 220 100% 70%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+  --primary-glow: 200 100% 70%;
+
+  --accent: 200 95% 55%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+
+  --secondary: 220 25% 10%;
+  --secondary-foreground: 210 40% 98%;
+
+  --muted: 220 18% 12%;
+  --muted-foreground: 215 20.2% 70%;
+
+  /* Dark gradients / shadows */
+  --gradient-primary: linear-gradient(135deg, hsl(220, 100%, 62%), hsl(200, 95%, 55%));
+  --gradient-hero: linear-gradient(135deg, hsl(222.2, 84%, 4.9%) 0%, hsl(220, 55%, 16%) 55%, hsl(200, 60%, 18%) 100%);
+  --gradient-subtle: linear-gradient(180deg, hsl(222.2, 84%, 4.9%) 0%, hsl(220, 18%, 10%) 100%);
+
+  --shadow-elegant: 0 10px 28px -10px hsl(220, 100%, 62%, 0.22);
+  --shadow-glow: 0 0 36px hsl(200, 95%, 55%, 0.25);
+  --shadow-card: 0 2px 14px -4px hsl(222.2, 84%, 4.9%, 0.65);
+  --shadow-float: 0 12px 40px -14px hsl(200, 95%, 55%, 0.25);
+
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

@@ -54,8 +54,7 @@ const QualitySection = () => {
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"> Quality Standards</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Our commitment to excellence is backed by international certifications and 
-            rigorous quality control processes at every stage of production.
+            Our commitment to quality is backed by international certifications and strict checks at every stage of production.
           </p>
         </div>
 
@@ -87,21 +86,20 @@ const QualitySection = () => {
         </div>
 
         {/* Quality Process */}
-        <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-8 border border-primary/20">
+        <div className="bg-gradient-to-r from-primary/5 to-accent/5 rounded-2xl p-6 sm:p-8 border border-primary/20">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-display font-bold text-foreground mb-4">
                 Our Quality Process
               </h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                We follow a comprehensive 6-step quality assurance process to ensure 
-                every product meets international standards and customer expectations.
+                We follow a clear 6-step quality process so every shipment meets international standards and your expectations.
               </p>
               <Button variant="export" size="lg">
                 Download Quality Manual
               </Button>
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               {qualityProcesses.map((process, index) => (
                 <div key={index} className="flex items-center space-x-3 bg-background/50 rounded-lg p-3 border border-border/50">
                   <div className="bg-accent rounded-full p-1">
